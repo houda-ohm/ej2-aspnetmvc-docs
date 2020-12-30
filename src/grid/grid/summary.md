@@ -70,3 +70,4 @@
 * [Avoid Typescript Compilation](grid/how-to/avoid-typescript-compilation.md)
 * [Enable editing in single click](grid/how-to/enable-editing-in-single-click.md)
 * [Cascading DropDownList with Grid editing](grid/how-to/cascading-drop-down-list-with-grid-editing.md)
+* [Hide sorting options on Excel filter Dialog](grid/how-to/hide-sorting-in-excel-filter.md)

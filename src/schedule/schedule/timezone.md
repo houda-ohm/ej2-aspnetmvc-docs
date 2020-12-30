@@ -68,6 +68,7 @@ This method is used to calculate the difference between passed UTC date and time
 Returns `number`
 
 ```sh
+    // Assume your local timezone as IST/UTC+05:30
     var timezone = new ej.schedule.Timezone();
     var date = new Date(2018,11,5,15,25,11);
     var timeZoneOffset = timezone.offset(date,"Europe/Paris");
@@ -87,6 +88,7 @@ This method is used to convert the passed date from one timezone to another time
 Returns `Date`
 
 ```sh
+    // Assume your local timezone as IST/UTC+05:30
     var timezone = new ej.schedule.Timezone();
     var date = new Date(2018,11,5,15,25,11);
     var convertedDate = timezone.convert(date, "Europe/Paris", "Asia/Tokyo");
@@ -107,6 +109,7 @@ This method is used to add the time difference between passed UTC date and timez
 Returns `Date`
 
 ```sh
+    // Assume your local timezone as IST/UTC+05:30
     var timezone = new ej.schedule.Timezone();
     var date = new Date(2018,11,5,15,25,11);
     var convertedDate = timezone.add(date, "Europe/Paris");
@@ -125,6 +128,7 @@ This method is used to remove the time difference between passed UTC date and ti
 Returns `Date`
 
 ```sh
+    // Assume your local timezone as IST/UTC+05:30
     var timezone = new ej.schedule.Timezone();
     var date = new Date(2018,11,5,15,25,11);
     var convertedDate = timezone.remove(date, "Europe/Paris");
@@ -142,6 +146,7 @@ This method is used to remove the local offset time from the date passed.
 Returns `Date`
 
 ```sh
+    // Assume your local timezone as IST/UTC+05:30
     var timezone = new ej.schedule.Timezone();
     var date = new Date(2018,11,5,15,25,11);
     var convertedDate = timezone.removeLocalOffset(date);

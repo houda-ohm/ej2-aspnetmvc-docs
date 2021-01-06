@@ -113,7 +113,7 @@ Quick commands are opened as popup on clicking the corresponding element. The co
 |----------------|---------|
 | Image | 'Replace', 'Align', 'Caption', 'Remove', 'InsertLink', 'Display', 'AltText','Dimension'.|
 | Link | 'Open', 'Edit', 'UnLink'.|
-| Text | 'Cut', 'Copy', 'Paste'.|
+| Text  (`Deprecated`) | 'Cut', 'Copy', 'Paste'.|
 | Table| 'TableHeader', 'TableRows', 'TableColumns', 'BackgroundColor', '-', 'TableRemove', 'Alignments', 'TableCellVerticalAlign', 'Styles'.|
 
 Custom tool can be added to the corresponding quick toolbar, using [`QuickToolbarSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_QuickToolbarSettings) property.

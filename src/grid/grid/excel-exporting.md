@@ -169,3 +169,5 @@ To Export the Grid in server side, You need to call the
 {% aspTab template="grid/excel-export/server-export", sourceFiles="server-exportMVC.cs" %}
 
 {% endaspTab %}
+
+> **Note:** Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/MVC-EJ2-Grid-server-side-exporting).

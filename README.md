@@ -1,4 +1,4 @@
-# Syncfusion Angular Documentation
+# Syncfusion ASP.NET MVC Documentation
 
 This is the GitHub repository for the technical product documentation for [Syncfusion ASP .NET MVC Components](https://ej2.syncfusion.com/home/aspnetmvc.html).This documentation is published to https://ej2.syncfusion.com/aspnetmvc/documentation/
 

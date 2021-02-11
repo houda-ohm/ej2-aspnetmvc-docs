@@ -1,16 +1,16 @@
 ---
-title: "CSS Customization"
+title: "Style and Appearance"
 component: "Pivot Table"
 description: "CSS Customization allows user to hide axis for the pivot by overriding the styles."
 ---
 
-# CSS Customization
+# Style and Appearance
 
 ## Hiding Axis
 
 The visibility of row, column, value and filter axis in Field List and Grouping Bar can be changed using custom CSS setting. To do so, please refer the code sample below:
 
-{% aspTab template="pivot-table/css-customization/axis", sourceFiles="axis.cs" %}
+{% aspTab template="pivot-table/css-axis", sourceFiles="axis.cs" %}
 
 {% endaspTab %}
 
@@ -18,7 +18,7 @@ The visibility of row, column, value and filter axis in Field List and Grouping 
 
 The alignment of text inside row headers, column headers, value cells and summary cells can be changed using custom CSS setting. To do so, please refer the code sample below:
 
-{% aspTab template="pivot-table/css-customization/text-align", sourceFiles="text-align.cs" %}
+{% aspTab template="pivot-table/css-align", sourceFiles="text-align.cs" %}
 
 {% endaspTab %}
 

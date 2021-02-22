@@ -17,7 +17,7 @@
 * [Paste from MS Word](rich-text-editor/paste-cleanup.md)
 * [Iframe Rendering](rich-text-editor/iframe.md)
 * [ExecCommand in Rich Text Editor](rich-text-editor/exec-command.md)
-* [CSS Structure](rich-text-editor/style.md)
+* [Style and appearance](rich-text-editor/style.md)
 * [Keyboard support](rich-text-editor/keyboard-support.md)
 * [Accessibility](rich-text-editor/accessibility.md)
 * [Add Google fonts](rich-text-editor/how-to/add-google-fonts.md)

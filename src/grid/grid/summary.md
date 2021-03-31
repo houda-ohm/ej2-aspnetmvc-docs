@@ -17,6 +17,7 @@
 * [Selection](grid/selection.md)
 * [Aggregates](grid/aggregates.md)
 * [Print](grid/print.md)
+* [Adaptive View](grid/adaptive.md)
 * [Scaffolding](grid/scaffolding.md)
 * [State Persistence](grid/state-persistence.md)
 * [Toolbar](grid/tool-bar.md)

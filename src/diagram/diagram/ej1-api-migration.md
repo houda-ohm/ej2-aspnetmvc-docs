@@ -3657,7 +3657,7 @@ This article describes the API migration process of Diagram component from Essen
 
     function getAccessibility(object, diagram) {
         var value;
-        if (object instanceof Connector) {
+        if (object.propName == "connectors") {
             value = 'clicked on Connector';
         } else {
             value = undefined;
@@ -9047,7 +9047,7 @@ This article describes the API migration process of Diagram component from Essen
 <code>
 
     @{
-        Html.EJ().Diagram("diagram").PageSettings(p=>p.PageBackground("grey")).Render();
+        Html.EJ().Diagram("diagram").PageSettings(p=>p.PageBackground("Grey")).Render();
     }
 
 </code>

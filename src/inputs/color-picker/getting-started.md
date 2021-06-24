@@ -12,7 +12,7 @@ We are going to render `ColorPicker` component in **Index.cshtml** page.
 
 Output be like the below.
 
-![ColorPicker Sample](./image/color-picker.PNG)
+![ColorPicker Sample](./images/color-picker.PNG)
 
 ## Run the application
 

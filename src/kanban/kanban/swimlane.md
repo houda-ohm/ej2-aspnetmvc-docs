@@ -105,4 +105,4 @@ By default, the `EnableFrozenRows` property is set as `false`. If you wish to sh
 
 Output be like the below.
 
-![kanban](./images/frozen-rows.PNG)
+![kanban](./images/frozen-rows.png)

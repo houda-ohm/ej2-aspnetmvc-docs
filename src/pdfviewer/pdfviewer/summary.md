@@ -7,6 +7,8 @@
 * [Text Markup Annotation](pdfviewer/text-markup-annotation.md)
 * [Hand Written Signature](pdfviewer/hand-written-signature.md)
 * [Interaction Mode](pdfviewer/interaction_mode.md)
+* [Programmatically work with form field](pdfviewer/formdesigner/programmatically-work-with-form-field.md)
+* [User interaction with form fields](pdfviewer/formdesigner/user-interaction-with-form-fields.md)
 * [Print](pdfviewer/print.md)
 * [Download](pdfviewer/download.md)
 * [Globalization](pdfviewer/globalization.md)

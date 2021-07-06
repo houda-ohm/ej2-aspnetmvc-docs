@@ -17,7 +17,7 @@ Chart supports the following financial series
 ## Hilo
 
 Hilo Series illustrates the price movements in stock using the high and low values.
-To render a Hilo series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Hilo`.
+To render a Hilo series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Hilo`.
 
 Hilo series requires 3 fields (x, high and low) to show the high and low price in the stock.
 
@@ -28,7 +28,7 @@ Hilo series requires 3 fields (x, high and low) to show the high and low price i
 ## High Low Open Close
 
 HiloOpenClose series is used to represent the low, high, open and closing values over time.
-To render a HiloOpenClose series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `HiloOpenClose`.
+To render a HiloOpenClose series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `HiloOpenClose`.
 
 HiloOpenClose series requires 5 fields (x, high, low, open and close) to show the high, low, open and close price
 values in the stock.
@@ -39,9 +39,9 @@ values in the stock.
 
 ### Customization of HiloOpenClose Series
 
-In HiloOpenClose series, [`bullFillColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_BullFillColor) is used to fill the
+In HiloOpenClose series, [`BullFillColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_BullFillColor) is used to fill the
  segment when the open value is greater than the close value and
-[`bearFillColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_BearFillColor) is used to fill the segment when the open
+[`BearFillColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_BearFillColor) is used to fill the segment when the open
 value is less than the close value.
 
 By default, bullFillColor is set as red and bearFillColor is set as green.
@@ -54,7 +54,7 @@ By default, bullFillColor is set as red and bearFillColor is set as green.
 
 Candle series are similar to Hilo Open Close series, are used to represent the low,
 high, open and closing price over time. To render a candle series, use series
-[`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Candle`.
+[`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Candle`.
 
 {% aspTab template="chart/series/financial-charts/candle", sourceFiles="candle.cs" %}
 
@@ -91,11 +91,11 @@ By default, bullFillColor is set as red and bearFillColor is set as green.
 
 **Solid Candles**
 
-[`enableSolidCandles`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_EnableSolidCandles) is used to enable/disable the solid
+[`BnableSolidCandles`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_EnableSolidCandles) is used to enable/disable the solid
 candles. By default is set to be false. The fill color of the candle will be defined by its opening and closing values.
 
-[`bearFillColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_BearFillColor) will be applied when the opening value is less than the closing value.
-[`bullFillColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_BullFillColor)
+[`BearFillColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_BearFillColor) will be applied when the opening value is less than the closing value.
+[`BullFillColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_BullFillColor)
 will be applied when the opening value is greater than closing value.
 
 {% aspTab template="chart/series/financial-charts/solid-candles", sourceFiles="solid-candles.cs" %}

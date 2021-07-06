@@ -20,7 +20,7 @@ SVG is used to render Chart by default for all browsers expect IE8 and old versi
 
 ## Canvas
 
-You can switch between SVG and Canvas rendering by using the `enableCanvas` option. The canvas mode rendering is used in the following scenarios,
+You can switch between SVG and Canvas rendering by using the `EnableCanvas` option. The canvas mode rendering is used in the following scenarios,
 
 * Plotting large number of data points.
 * Performing high frequency live updates.

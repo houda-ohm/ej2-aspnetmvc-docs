@@ -12,8 +12,8 @@ Legend provides information about the series rendered in the chart.
 
 ## Enable Legend
 
-You can use legend for the chart by setting the [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_Visible)
-property to true in [`legendSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html) object.
+You can use legend for the chart by setting the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_Visible)
+property to true in [`LegendSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html) object.
 
 {% aspTab template="chart/getting-started/legend", sourceFiles="legend.cs" %}
 
@@ -21,7 +21,7 @@ property to true in [`legendSettings`](https://help.syncfusion.com/cr/aspnetmvc-
 
 ## Position and Alignment
 
-By using the [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_Position) property, you can position the legend
+By using the [`Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_Position) property, you can position the legend
 at left, right, top or bottom of the chart. The legend is positioned at the bottom of the chart, by default.
 
 {% aspTab template="chart/axis/legend/default", sourceFiles="default.cs" %}
@@ -40,8 +40,8 @@ Custom position helps you to position the legend anywhere in the chart using x, 
 
 <!-- markdownlint-disable MD036 -->
 
-You can align the legend as `center`, `far` or `near` to the chart using
-[`alignment`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_Alignment) property.
+You can align the legend as `Center`, `Far` or `Near` to the chart using
+[`Alignment`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_Alignment) property.
 
 {% aspTab template="chart/axis/legend/alignment", sourceFiles="alignment.cs" %}
 
@@ -49,8 +49,8 @@ You can align the legend as `center`, `far` or `near` to the chart using
 
 ## Customization
 
-To change the legend icon shape, you can use [`legendShape`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_LegendShape) property
-in the [`series`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html). By default legend icon shape is `seriesType`.
+To change the legend icon shape, you can use [`LegendShape`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_LegendShape) property
+in the [`Series`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html). By default legend icon shape is `SeriesType`.
 
 {% aspTab template="chart/axis/legend/custom", sourceFiles="custom.cs" %}
 
@@ -60,7 +60,7 @@ in the [`series`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.C
 
 By default, legend takes 20% - 25% of the chart's height horizontally, when it is placed on top or bottom position and 20% - 25% of the
 chart's width vertically, when placed on left or right position of the chart. You can change this default legend size by using the
-[`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_Height) property of the `legendSettings`.
+[`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_Width) and [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_Height) property of the `LegendSettings`.
 
 {% aspTab template="chart/axis/legend/size", sourceFiles="size.cs" %}
 
@@ -68,8 +68,8 @@ chart's width vertically, when placed on left or right position of the chart. Yo
 
 **Legend Item Size**
 
-You can customize the size of the legend items by using the [`shapeHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ShapeHeight)
-and [`shapeWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ShapeWidth) property.
+You can customize the size of the legend items by using the [`ShapeHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ShapeHeight)
+and [`ShapeWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ShapeWidth) property.
 
 {% aspTab template="chart/axis/legend/item-size", sourceFiles="item-size.cs" %}
 
@@ -88,7 +88,7 @@ items by navigating between the pages using navigation buttons.
 
 By default, legend click enables you to collapse the series visibility.  On other hand, if you need to select
 a series through legend click, disable the
-[`toggleVisibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ToggleVisibility).
+[`ToggleVisibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ToggleVisibility).
 
 {% aspTab template="chart/axis/legend/selection", sourceFiles="selection.cs" %}
 
@@ -96,7 +96,7 @@ a series through legend click, disable the
 
 ## Enable Animation
 
-You can customize the animation while clicking legend by setting enableAnimation as true or false using `enableAnimation` property in chart.
+You can customize the animation while clicking legend by setting enableAnimation as true or false using `EnableAnimation` property in chart.
 
 {% aspTab template="chart/axis/legend/animation", sourceFiles="animation.cs" %}
 

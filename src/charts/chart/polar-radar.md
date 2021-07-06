@@ -12,7 +12,7 @@ description: "Polar and Radar chart supports different draw types and customizat
 
 ## Polar Chart
 
-To render a polar series, use series[`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Polar`.
+To render a polar series, use series[`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Polar`.
 
 ### Draw Types
 
@@ -21,8 +21,8 @@ scatter, stacking area and stacking column. The default value of drawType is `Li
 
 **Line**
 
-To render a line draw type, use series [`drawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Line`.
-[`isClosed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_IsClosed) property specifies whether to join start and end point of
+To render a line draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Line`.
+[`IsClosed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_IsClosed) property specifies whether to join start and end point of
  a line series used in polar chart to form a closed path. Default value of isClosed is true.
 
 {% aspTab template="chart/series/polar_radar/polar-line", sourceFiles="polar-line.cs" %}
@@ -31,7 +31,7 @@ To render a line draw type, use series [`drawType`](https://help.syncfusion.com/
 
 **Spline**
 
-To render a spline line draw type, use series [`drawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Spline`.
+To render a spline line draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Spline`.
 
 {% aspTab template="chart/series/polar_radar/polar-spline", sourceFiles="polar-spline.cs" %}
 
@@ -39,7 +39,7 @@ To render a spline line draw type, use series [`drawType`](https://help.syncfusi
 
 **Area**
 
-To render a area line draw type, use series [`drawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Area`.
+To render a area line draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Area`.
 
 {% aspTab template="chart/series/polar_radar/polar-area", sourceFiles="polar-area.cs" %}
 
@@ -47,7 +47,7 @@ To render a area line draw type, use series [`drawType`](https://help.syncfusion
 
 **Stacked Area**
 
-To render a stacked area draw type, use series [`drawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `StackingArea`.
+To render a stacked area draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `StackingArea`.
 
 {% aspTab template="chart/series/polar_radar/polar-stackedarea", sourceFiles="polar-stackedarea.cs" %}
 
@@ -55,7 +55,7 @@ To render a stacked area draw type, use series [`drawType`](https://help.syncfus
 
 **Column**
 
-To render a column draw type, use series [`drawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Column`.
+To render a column draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Column`.
 
 {% aspTab template="chart/series/polar_radar/polar-column", sourceFiles="polar-column.cs" %}
 
@@ -63,7 +63,7 @@ To render a column draw type, use series [`drawType`](https://help.syncfusion.co
 
 **Stacked Column**
 
-To render a stacked column draw type, use series [`drawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `StackingColumn`.
+To render a stacked column draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `StackingColumn`.
 
 {% aspTab template="chart/series/polar_radar/polar-stackedcolumn", sourceFiles="polar-stackedcolumn.cs" %}
 
@@ -71,7 +71,7 @@ To render a stacked column draw type, use series [`drawType`](https://help.syncf
 
 **Range Column**
 
-To render a range column draw type, use series [`drawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `RangeColumn`.
+To render a range column draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `RangeColumn`.
 
 {% aspTab template="chart/series/polar_radar/polar-rangecolumn", sourceFiles="polar-rangecolumn.cs" %}
 
@@ -79,7 +79,7 @@ To render a range column draw type, use series [`drawType`](https://help.syncfus
 
 **Scatter**
 
-To render a scatter draw type, use series [`drawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Scatter`.
+To render a scatter draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Scatter`.
 
 {% aspTab template="chart/series/polar_radar/polar-scatter", sourceFiles="polar-scatter.cs" %}
 
@@ -87,14 +87,14 @@ To render a scatter draw type, use series [`drawType`](https://help.syncfusion.c
 
 ## Radar Chart
 
-To render a radar series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Radar`.
+To render a radar series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Radar`.
 
 ### Draw Type
 
 **Line**
 
-To render a line draw type, use series [`drawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Line`.
-[`isClosed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_IsClosed) property specifies whether to join start and end point of
+To render a line draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Line`.
+[`IsClosed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_IsClosed) property specifies whether to join start and end point of
 a line series used in polar chart to form a closed path. Default value of isClosed is true.
 
 {% aspTab template="chart/series/polar_radar/radar-line", sourceFiles="radar-line.cs" %}
@@ -106,7 +106,7 @@ a line series used in polar chart to form a closed path. Default value of isClos
 **Start Angle**
 
 You can customize the start angle of the polar series using
-[`startAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_StartAngle) property. By default, `startAngle` is 0 degree.
+[`StartAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_StartAngle) property. By default, `StartAngle` is 0 degree.
 
 {% aspTab template="chart/series/polar_radar/start-angle", sourceFiles="start-angle.cs" %}
 
@@ -115,7 +115,7 @@ You can customize the start angle of the polar series using
 **Coefficient in axis**
 
 You can customize the radius of the polar series and radar series using
-[`coefficient`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Coefficient) property. By default, `coefficient` is 100.
+[`Coefficient`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Coefficient) property. By default, `Coefficient` is 100.
 
 {% aspTab template="chart/series/polar_radar/co-efficient", sourceFiles="co-efficient.cs" %}
 

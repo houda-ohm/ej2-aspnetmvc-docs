@@ -18,7 +18,7 @@ Essential JS 2 Chart supports 32 types of series.
 
 **Line**
 
-To render a line series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Line`.
+To render a line series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Line`.
 
 {% aspTab template="chart/series/line-charts/line", sourceFiles="line.cs" %}
 
@@ -26,7 +26,7 @@ To render a line series, use series [`type`](https://help.syncfusion.com/cr/aspn
 
 **Step Line**
 
-To render a step line series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StepLine`.
+To render a step line series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StepLine`.
 
 {% aspTab template="chart/series/line-charts/stepline", sourceFiles="stepline.cs" %}
 
@@ -34,7 +34,7 @@ To render a step line series, use series [`type`](https://help.syncfusion.com/cr
 
 **Stacked Line**
 
-To render a stacked line series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StackingLine`.
+To render a stacked line series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StackingLine`.
 
 {% aspTab template="chart/series/line-charts/stacked-line", sourceFiles="stacked-line.cs" %}
 
@@ -42,7 +42,7 @@ To render a stacked line series, use series [`type`](https://help.syncfusion.com
 
 **100% Stacked Line**
 
-To render a 100% stacked line series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StackingLine100`.
+To render a 100% stacked line series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StackingLine100`.
 
 {% aspTab template="chart/series/line-charts/stacked-line-100", sourceFiles="stacked-line-100.cs" %}
 
@@ -50,7 +50,7 @@ To render a 100% stacked line series, use series [`type`](https://help.syncfusio
 
 **Spline**
 
-To render a spline series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Spline`.
+To render a spline series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Spline`.
 
 {% aspTab template="chart/series/line-charts/spline", sourceFiles="spline.cs" %}
 
@@ -58,7 +58,7 @@ To render a spline series, use series [`type`](https://help.syncfusion.com/cr/as
 
 **Spline Area**
 
-To render a spline series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Spline`.
+To render a spline series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Spline`.
 
 {% aspTab template="chart/series/line-charts/splinearea", sourceFiles="splinearea.cs" %}
 
@@ -67,7 +67,7 @@ To render a spline series, use series [`type`](https://help.syncfusion.com/cr/as
 **Multicolored Line**
 
 To render a multicolored line series, use the series type as `MultiColoredLine`.
-Here, the individual colors to the data can be mapped by using `pointColorMapping`.
+Here, the individual colors to the data can be mapped by using `PointColorMapping`.
 
 {% aspTab template="chart/series/line-charts/multi-line", sourceFiles="multi-line.cs" %}
 
@@ -75,8 +75,8 @@ Here, the individual colors to the data can be mapped by using `pointColorMappin
 
 **Customization of Line Charts**
 
-`stroke`, `stroke-width` and `dashArray` of all line type series can be customized by using [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill),
-[`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Width) and [`dashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DashArray) properties.
+`stroke`, `stroke-width` and `dashArray` of all line type series can be customized by using [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill),
+[`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Width) and [`DashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DashArray) properties.
 
 {% aspTab template="chart/series/line-charts/custom-line", sourceFiles="custom-line.cs" %}
 
@@ -86,7 +86,7 @@ Here, the individual colors to the data can be mapped by using `pointColorMappin
 
 **Area**
 
-To render a area series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Area`.
+To render a area series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Area`.
 
 {% aspTab template="chart/series/area-charts/area", sourceFiles="area.cs" %}
 
@@ -94,7 +94,7 @@ To render a area series, use series [`type`](https://help.syncfusion.com/cr/aspn
 
 **Range Area**
 
-To render a range area series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type)
+To render a range area series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type)
 as `RangeArea`.
 
 {% aspTab template="chart/series/area-charts/rangearea", sourceFiles="rangearea.cs" %}
@@ -105,7 +105,7 @@ as `RangeArea`.
 
 The Spline Range Area Chart is used to display continuous data points as a set of splines that vary between high and low values over intervals of time and across different categories.
 
-To render a spline range area series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html) as `SplineRangeArea`.
+To render a spline range area series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html) as `SplineRangeArea`.
 
 {% aspTab template="chart/series/area-charts/splinerangearea", sourceFiles="splinerangearea.cs" %}
 
@@ -113,7 +113,7 @@ To render a spline range area series, use series [`type`](https://help.syncfusio
 
 **Stacked Area**
 
-To render a stacked area series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StackingArea`.
+To render a stacked area series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StackingArea`.
 
 {% aspTab template="chart/series/area-charts/stackedarea", sourceFiles="stackedarea.cs" %}
 
@@ -121,7 +121,7 @@ To render a stacked area series, use series [`type`](https://help.syncfusion.com
 
 **100% Stacked Area**
 
-To render a 100% stacked area series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StackingArea100`.
+To render a 100% stacked area series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StackingArea100`.
 
 {% aspTab template="chart/series/area-charts/100%stackedarea", sourceFiles="stackedarea100.cs" %}
 
@@ -129,7 +129,7 @@ To render a 100% stacked area series, use series [`type`](https://help.syncfusio
 
 **Step Area**
 
-To render a step area series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StepArea`.
+To render a step area series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StepArea`.
 
 {% aspTab template="chart/series/area-charts/steparea", sourceFiles="steparea.cs" %}
 
@@ -137,7 +137,7 @@ To render a step area series, use series [`type`](https://help.syncfusion.com/cr
 
 **Stacked Step Area**
 
-To render a stacked step area series, use series `type` as `StackingStepArea`.
+To render a stacked step area series, use series `Type` as `StackingStepArea`.
 
 {% aspTab template="chart/series/area-charts/stacked-step-area", sourceFiles="stacked-step-area.cs" %}
 
@@ -146,7 +146,7 @@ To render a stacked step area series, use series `type` as `StackingStepArea`.
 **Multicolored area**
 
 To render a multicolored area series, use the series type as `MultiColoredArea`.
-The required `segments` of the series can be customized using the `value`, `color`, and `dashArray`.
+The required `Segments` of the series can be customized using the `Value`, `Color`, and `DashArray`.
 
 {% aspTab template="chart/series/area-charts/multicolor-area", sourceFiles="multicolor-area.cs" %}
 
@@ -154,8 +154,8 @@ The required `segments` of the series can be customized using the `value`, `colo
 
 **Customization of Area Charts**
 
-fill, width and dashArray properties can be customized by [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill),
-[`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Width) and [`dashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DashArray) properties.
+fill, width and dashArray properties can be customized by [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill),
+[`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Width) and [`DashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DashArray) properties.
 
 {% aspTab template="chart/series/area-charts/custom-area", sourceFiles="custom-area.cs" %}
 
@@ -165,7 +165,7 @@ fill, width and dashArray properties can be customized by [`fill`](https://help.
 
 **Column**
 
-To render a column series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Column`.
+To render a column series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Column`.
 
 {% aspTab template="chart/series/column-charts/column", sourceFiles="column.cs" %}
 
@@ -173,7 +173,7 @@ To render a column series, use series [`type`](https://help.syncfusion.com/cr/as
 
 **Range Column**
 
-To render a range column series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `RangeColumn`.
+To render a range column series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `RangeColumn`.
 
 {% aspTab template="chart/series/column-charts/rangecolumn", sourceFiles="rangecolumn.cs" %}
 
@@ -181,7 +181,7 @@ To render a range column series, use series [`type`](https://help.syncfusion.com
 
 **Stacked Column**
 
-To render a stacked column series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StackingColumn`.
+To render a stacked column series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StackingColumn`.
 
 {% aspTab template="chart/series/column-charts/stackedcolumn", sourceFiles="stackedcolumn.cs" %}
 
@@ -189,7 +189,7 @@ To render a stacked column series, use series [`type`](https://help.syncfusion.c
 
 **100% Stacked Column**
 
-To render a 100% stacked column series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StackingColumn100`.
+To render a 100% stacked column series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StackingColumn100`.
 
 {% aspTab template="chart/series/column-charts/100%stackedcolumn", sourceFiles="stackedcolumn100.cs" %}
 
@@ -197,7 +197,7 @@ To render a 100% stacked column series, use series [`type`](https://help.syncfus
 
 **Stacking Group**
 
-You can use the [`stackingGroup`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_StackingGroup) property to group the stacked columns and 100% stacked columns.
+You can use the [`StackingGroup`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_StackingGroup) property to group the stacked columns and 100% stacked columns.
 Columns with same group name are stacked on top of each other.
 
 {% aspTab template="chart/series/column-charts/group", sourceFiles="group.cs" %}
@@ -207,10 +207,10 @@ Columns with same group name are stacked on top of each other.
 **Customization of Column Charts**
 
 <!-- markdownlint-disable MD013 -->
-`fill` and `border` of all column type series can be
-customized using [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill) and [`border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Border) properties.
+`Fill` and `Border` of all column type series can be
+customized using [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill) and [`Border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Border) properties.
 For customizing a specify point, please refer the
-[`pointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender).
+[`PointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender).
 
 {% aspTab template="chart/series/column-charts/custom-column", sourceFiles="custom-column.cs" %}
 
@@ -220,7 +220,7 @@ For customizing a specify point, please refer the
 
 **Bar**
 
-To render a bar series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Bar`.
+To render a bar series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Bar`.
 
 {% aspTab template="chart/series/bar-charts/bar", sourceFiles="bar.cs" %}
 
@@ -228,7 +228,7 @@ To render a bar series, use series [`type`](https://help.syncfusion.com/cr/aspne
 
 **Stacked bar**
 
-To render a stacked bar series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StackingBar`.
+To render a stacked bar series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StackingBar`.
 
 {% aspTab template="chart/series/bar-charts/stackedbar", sourceFiles="stackedbar.cs" %}
 
@@ -236,7 +236,7 @@ To render a stacked bar series, use series [`type`](https://help.syncfusion.com/
 
 **100% Stacked Bar**
 
-To render a 100% stacked bar series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StackingBar100`.
+To render a 100% stacked bar series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StackingBar100`.
 
 {% aspTab template="chart/series/bar-charts/100%stackedbar", sourceFiles="stackedbar100.cs" %}
 
@@ -244,7 +244,7 @@ To render a 100% stacked bar series, use series [`type`](https://help.syncfusion
 
 **Stacking Group**
 
-You can use the [`stackingGroup`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_StackingGroup) property to group the stacked
+You can use the [`StackingGroup`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_StackingGroup) property to group the stacked
 bar and 100% stacked bar. Columns with same group name are stacked on top of each other.
 
 {% aspTab template="chart/series/bar-charts/group", sourceFiles="group.cs" %}
@@ -253,9 +253,9 @@ bar and 100% stacked bar. Columns with same group name are stacked on top of eac
 
 **Customization of Bar Charts**
 
-`fill` and `border` of all bar type series can be
-customized using [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill) and [`border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Border).
-For customizing a specify point, please refer the [`pointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender).
+`Fill` and `Border` of all bar type series can be
+customized using [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill) and [`Border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Border).
+For customizing a specify point, please refer the [`PointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender).
 
 {% aspTab template="chart/series/bar-charts/custom-bar", sourceFiles="custom-bar.cs" %}
 
@@ -263,7 +263,7 @@ For customizing a specify point, please refer the [`pointRender`](https://help.s
 
 ## Scatter Charts
 
-To render a scatter series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Scatter`.
+To render a scatter series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Scatter`.
 
 {% aspTab template="chart/series/scatter-bubble/scatter", sourceFiles="scatter.cs" %}
 
@@ -273,7 +273,7 @@ To render a scatter series, use series [`type`](https://help.syncfusion.com/cr/a
 
 ##Bubble Chart
 
-To render a bubble series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Bubble`.
+To render a bubble series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Bubble`.
 
 {% aspTab template="chart/series/scatter-bubble/bubble", sourceFiles="bubble.cs" %}
 
@@ -281,7 +281,7 @@ To render a bubble series, use series [`type`](https://help.syncfusion.com/cr/as
 
 **Bubble Size Mapping**
 
-`size` property can be used to map the size value specified in data source.
+`Size` property can be used to map the size value specified in data source.
 
 {% aspTab template="chart/series/scatter-bubble/bubble-size", sourceFiles="bubble-size.cs" %}
 

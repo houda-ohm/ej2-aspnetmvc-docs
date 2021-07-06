@@ -22,7 +22,7 @@ For more information about number and date formatter you can refer
 
 Globalization is the process of designing and developing an component that works in different
 cultures/locales.  Internationalization  library is used to globalize number, date, time values in
-Chart component using  `labelFormat` property in axis.
+Chart component using  `LabelFormat` property in axis.
 
 **Numeric Format**
 

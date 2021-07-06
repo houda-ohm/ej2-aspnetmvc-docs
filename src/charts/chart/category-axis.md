@@ -23,7 +23,7 @@ Category axis are used to represent, the string values instead of numbers.
 <!-- markdownlint-disable MD036 -->
 
 By default, category labels are placed between the ticks in an axis, this can also be placed on ticks
-using [`labelPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_LabelPlacement) property.
+using [`LabelPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_LabelPlacement) property.
 
 {% aspTab template="chart/axis/category/placement", sourceFiles="placement.cs" %}
 
@@ -31,8 +31,8 @@ using [`labelPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 ## Range
 
-Range of the category axis can be customized using [`minimum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Minimum),
-[`maximum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Maximum) and [`interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Interval) property of
+Range of the category axis can be customized using [`Minimum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Minimum),
+[`Maximum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Maximum) and [`Interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Interval) property of
 the axis.
 
 {% aspTab template="chart/axis/category/range", sourceFiles="range.cs" %}
@@ -42,7 +42,7 @@ the axis.
 ## Indexed category axis
 
 Category axis also can be rendered based on the index values of data source. This can be achieved by defining the
-`isIndexed` property to `true` in the axis.
+`IsIndexed` property to `true` in the axis.
 
 {% aspTab template="chart/axis/category/index", sourceFiles="index.cs" %}
 

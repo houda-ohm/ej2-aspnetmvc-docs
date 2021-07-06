@@ -26,7 +26,7 @@ We have different type of selection mode for selecting the data. They are,
 
 ## Point
 
- You can select a point, by setting `selectionMode` to point.
+ You can select a point, by setting `SelectionMode` to point.
 
 {% aspTab template="chart/user-interaction/selection/point-selection", sourceFiles="point-selection.cs" %}
 
@@ -34,7 +34,7 @@ We have different type of selection mode for selecting the data. They are,
 
 ## Series
 
- You can select a series, by setting `selectionMode` to series.
+ You can select a series, by setting `SelectionMode` to series.
 
 {% aspTab template="chart/user-interaction/selection/series-selection", sourceFiles="series-selection.cs" %}
 
@@ -42,7 +42,7 @@ We have different type of selection mode for selecting the data. They are,
 
 ## Cluster
 
-You can select the points that corresponds to the same index in all the series, by setting `selectionMode` to
+You can select the points that corresponds to the same index in all the series, by setting `SelectionMode` to
 cluster.
 
 {% aspTab template="chart/user-interaction/selection/cluster-selection", sourceFiles="cluster-selection.cs" %}
@@ -53,13 +53,13 @@ cluster.
 
 **DragXY, DragX and DragY**
 
-To fetch the collection of data under a particular region, you have to set `selectionMode` as `DragXY`.
+To fetch the collection of data under a particular region, you have to set `SelectionMode` as `DragXY`.
 
 * DragXY - Allows us to select data with respect to horizontal and vertical axis.
 * DragX - Allows us to select data with respect to horizontal axis.
 * DragY - Allows us to select data with respect to vertical axis.
 
-The selected data’s are returned as an array collection in the [`dragComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_DragComplete)
+The selected data’s are returned as an array collection in the [`DragComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_DragComplete)
 event.
 
 {% aspTab template="chart/user-interaction/selection/drag", sourceFiles="drag.cs" %}
@@ -68,7 +68,7 @@ event.
 
 ## Selection type
 
-You can select multiple points or series, by enabling the [`isMultiSelect`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_IsMultiSelect) property.
+You can select multiple points or series, by enabling the [`IsMultiSelect`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_IsMultiSelect) property.
 
 {% aspTab template="chart/user-interaction/selection/selection-type", sourceFiles="selection-type.cs" %}
 
@@ -77,7 +77,7 @@ You can select multiple points or series, by enabling the [`isMultiSelect`](http
 ## Selection on load
 
 You can able to select a point or series programmatically on a chart using
-[`selectedDataIndexes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_SelectedDataIndexes)
+[`SelectedDataIndexes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_SelectedDataIndexes)
 property.
 
 {% aspTab template="chart/user-interaction/selection/onload", sourceFiles="onload.cs" %}
@@ -87,7 +87,7 @@ property.
 ## Selection through on legend
 
 You can able to select a point or series through on legend using
-[`toggleVisibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ToggleVisibility) property.
+[`ToggleVisibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ToggleVisibility) property.
 
 {% aspTab template="chart/user-interaction/selection/selection-legend", sourceFiles="selection-legend.cs" %}
 
@@ -95,7 +95,7 @@ You can able to select a point or series through on legend using
 
 ## Customization for selection
 
-You can apply custom style to selected points or series with [`selectionStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_SelectionStyle)
+You can apply custom style to selected points or series with [`SelectionStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_SelectionStyle)
 property.
 
 {% aspTab template="chart/user-interaction/selection/custom-selection", sourceFiles="custom-selection.cs" %}

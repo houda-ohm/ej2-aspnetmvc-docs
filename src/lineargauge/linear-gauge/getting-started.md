@@ -1,8 +1,16 @@
-# Getting Started
+---
+title: " Getting Started with ASP.NET MVC Linear Gauge component | Syncfusion "
+
+component: "Linear Gauge"
+
+description: "Learn here about getting started with Syncfusion ASP.NET MVC Linear Gauge component, its elements, and more."
+---
+
+# Getting Started with ASP.NET MVC Linear Gauge
 
 ## Prerequisites
 
-To get start with ASP.NET MVC application, need to ensure the following software to be installed on the machine.
+To get start with ASP.NET MVC application, ensure the following software are installed on the machine.
 
 1. .Net Framework 4.5 and above.
 2. ASP.NET MVC 4 or ASP.NET MVC 5
@@ -10,75 +18,94 @@ To get start with ASP.NET MVC application, need to ensure the following software
 
 ## Preparing ASP.NET MVC application
 
-The following steps to create ASP.NET MVC Application.
+The following steps are used to create ASP.NET MVC Application.
 
-**Step 1:** Create ASP.NET MVC Application with default template project in Visual Studio.
+**Step 1:** Open the Visual Studio and click the **File** menu and select **New -> Project** option.
 
-![Default Template](./images/default-template.png)
+![Default Template](../images/default-template.png)
 
-**Step 2:** Once your project created. We need to add Syncfusion EJ2 package into your application by using `NuGet Package Manager`.
+**Step 2:** Select **ASP.NET Web Application  (.NET Framework)** templates in visual studio 2019 and click **Next**.
 
-Open the `NuGet` package manager.
+![Select the Asp.Net MVC application](../images/project-selecctmvc.png)
 
-![Solution Explorer](./images/solution-Explorer.png)
+**Step 3:** Change the application name and location of the application if necessary then click **Create**.
 
-Install the **Syncfusion.EJ2.MVC4** package to the application.
+![Changing the application name](../images/application-namemvc.png)
 
-![Nuget Demo](./images/nuget-demo.png)
+**Step 4:** Choose **MVC** and then click **Create**. Now, the MVC web application project is created with default ASP.NET MVC template.
+
+![Selecting the MVC](../images/choose-mvc.png)
+
+**Step 5:** Add the [`Syncfusion.EJ2.MVC4`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4/) NuGet package to the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages…**.
+
+![Adding the nuget to the application](../images/solution-Explorer.png)
+
+**Step 6:** Search the `Syncfusion EJ2 MVC5` keyword in the Browse tab and install **Syncfusion.EJ2.MVC5** NuGet package in the application.
+
+![Nuget Demo](../images/nuget-mvc.png)
 
 After installation complete, this will be included in the project. You can refer it from the Project Assembly Reference.
 
 **Note:** We need to install **NewtonSoft.JSON** as a dependency, since **Syncfusion.EJ2** dependent to `NewtonSoft.JSON` package.
 
-**Step 3:** Add Syncfusion.EJ2 namespace reference in `Web.Config`.
+**Step 7:** Open **~/Views/Web.config** file and add the **Syncfusion.EJ2** namespace reference to the `<system.web.webPages.razor>` element and Syncfusion.EJ2 assembly reference to `<system.web>` element.
 
 ```javascript
-
-<namespaces>
-    <add namespace="Syncfusion.EJ2"/>
-</namespaces>
-
+<configuration>
+    ....
+    ....
+    <system.web.webPages.razor>
+        ....
+        ....
+        <pages pageBaseType="System.Web.Mvc.WebViewPage">
+            <namespaces>
+                ....
+                ....
+                <add namespace="Syncfusion.EJ2"/>
+            </namespaces>
+        </pages>
+    </system.web.webPages.razor>
+    ....
+    ....
+    <system.web>
+        <compilation>
+            <assemblies>
+                ....
+                ....
+                <add assembly="Syncfusion.EJ2, Culture=neutral" />
+            </assemblies>
+        </compilation>
+    </system.web>
+</configuration>
 ```
 
-```javascript
-
-<system.web>
-    <compilation>
-      <assemblies>
-        <add assembly="Syncfusion.EJ2" Version=15.3400.0.27, Culture=neutral, PublicKeyToken=31BF3856AD364E35"  />
-      </assemblies>
-    </compilation>
-  </system.web>
-
-```
-
-**Step 4:** Add client side resources through [`CDN`](http://ej2.syncfusion.com/documentation/base/deployment.html?lang=typescript#cdn) or local [`package`](https://www.npmjs.com/package/@syncfusion/ej2) in the layout page **_Layout.cshtml.**
+**Step 8:** Add client side resources through [`CDN`](http://ej2.syncfusion.com/documentation/base/deployment.html?lang=typescript#cdn) or local [`package`](https://www.npmjs.com/package/@syncfusion/ej2) in the in the `<head>` element of **~/Views/Shared/_Layout.cshtml** layout page.
 
 ```cs
-@* Syncfusion Essential JS 2 Scripts *@
-<script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+<head>
+    ....
+    ....
 
+    <!-- Syncfusion Essential JS 2 Styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+
+    <!-- Syncfusion Essential JS 2 Scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+</head>
 ```
 
-**Step 5:** Add Script Manager and namespace in layout page **_Layout.cshtml.**
+**Step 9:** Add the Essential JS 2 Script Manager at the end of `<body>` element in the **~/Views/Shared/_Layout.cshtml** layout page.
 
 ```cs
-
-@using Syncfusion.EJ2;
-
-    . . .
-    . . .
 <body>
-    . . .
-    . . .
+    ....
+    ....
+    <!-- Syncfusion Essential JS 2 ScriptManager -->
     @Html.EJS().ScriptManager()
 </body>
-
 ```
 
-**Step 6:** Now, we can add Syncfusion Essential JS 2 for ASP.Net Core components in any page you want.
-
-We are going to render `LinearGauge` component in **Index.cshtml** page.
+**Step 10:** Now, add the Syncfusion Essential JS 2 Linear Gauge component in **Index.cshtml** in the **~/Views/Home** folder.
 
 ```cs
 
@@ -90,7 +117,7 @@ We are going to render `LinearGauge` component in **Index.cshtml** page.
 
 ## Add Gauge Title
 
-You can add a title using `title` attribute to the linear gauge to provide quick information to the user.
+The title for the Linear Gauge can be set using `title` property in Linear Gauge.
 
 ```cs
 
@@ -102,8 +129,7 @@ You can add a title using `title` attribute to the linear gauge to provide quick
 
 ## Axis
 
-You can set the range to the axis using `minimum` and `maximum` attributes for axis tag.
-Refer below code snippet to add the axis range to lineargauge.
+The start value and end value for the Linear Gauge can be set using the `minimum` and `maximum` properties in the `axis` object
 
 ```cs
   @Html.EJS().LinearGauge("container").Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis> {

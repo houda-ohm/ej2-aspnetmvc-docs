@@ -12,3 +12,5 @@ Here, ej2 dialog is used as confirm dialog. Refer to the following example.
 {% aspTab template="uploader/dialog-confirm", sourceFiles="dialog-confirm.cs,index.css" %}
 
 {% endaspTab %}
+
+> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.

@@ -13,3 +13,5 @@ You can convert the size to standard formats (`KB` or `MB`) using **bytesToSize*
 {% aspTab template="uploader/check-file-size", sourceFiles="check-file-size.cs,index.css" %}
 
 {% endaspTab %}
+
+> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.

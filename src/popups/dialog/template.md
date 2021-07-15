@@ -21,7 +21,11 @@ The Dialog footer can be enabled by adding built-in [`Buttons`](https://help.syn
 
 > The [`Buttons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Buttons) and [`FooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_FooterTemplate) properties can't be used at the same time.
 
-The below example demonstrates the usage of header and footer template in the Dialog
+## Content
+
+The Dialog content can be provided through the [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Content) property, and it accepts both text and HTML string as content.
+
+The below example demonstrates the usage of header, footer and content template in the Dialog
 
 {% aspTab template="dialog/template/footer", sourceFiles="controller.cs" %}
 

@@ -37,3 +37,5 @@ The following example shows how the auto row adjustment feature works on timelin
 {% aspTab template="schedule/row-auto-height/timeline-resource", sourceFiles="data.cs"  %}
 
 {% endaspTab %}
+
+> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

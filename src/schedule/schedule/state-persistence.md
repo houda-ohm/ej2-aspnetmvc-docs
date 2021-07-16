@@ -15,3 +15,5 @@ The following sample demonstrates how to set state persistence of the Scheduler 
 {% aspTab template="schedule/persistence", sourceFiles="data.cs"  %}
 
 {% endaspTab %}
+
+> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

@@ -152,3 +152,5 @@ Returns `Date`
     var convertedDate = timezone.removeLocalOffset(date);
     console.log(convertedDate); //2018-12-05T15:25:11.000Z
 ```
+
+> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

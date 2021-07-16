@@ -220,3 +220,5 @@ You can provide the alternative display name for such customized views on the Sc
 ## See Also
 
 * [How to restrict view navigation while clicking on dates](./how-to/prevent-date-navigation)
+
+> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

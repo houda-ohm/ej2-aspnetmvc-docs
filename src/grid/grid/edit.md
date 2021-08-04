@@ -103,6 +103,16 @@ To enable Normal edit, set the [`Mode`](https://help.syncfusion.com/cr/aspnetcor
 
 > Normal edit mode is default mode of editing.
 
+### Automatically update the column based on another column edited value
+
+You can update the column value based on another column edited value by using the Cell Edit Template feature.
+
+In the below demo, we have update the `TotalCost` column value based on the `UnitPrice` and `UnitInStock` column value while editing.
+
+{% aspTab template="grid/edit/autoupdate", sourceFiles="autoupdate.cs" %}
+
+{% endaspTab %}
+
 ### Dialog
 
 In dialog edit mode, when you start editing the currently selected row data will be shown on a dialog.

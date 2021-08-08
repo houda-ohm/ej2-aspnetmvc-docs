@@ -22,7 +22,7 @@ To render the custom HTML elements in the Linear Gauge component, use the [`Cont
 
 {% endaspTab %}
 
-![Adding annotation to the Linear Gauge](../images/annotation.png)
+![Adding annotation to the Linear Gauge](images/annotation.png)
 
 ## Customization
 
@@ -43,7 +43,7 @@ To change the stack order of an annotation element, the [`ZIndex`](https://help
 
 {% endaspTab %}
 
-![Adding z-index to annotation](../images/annotation-zindex.png)
+![Adding z-index to annotation](images/annotation-zindex.png)
 
 ### Positioning an annotation
 
@@ -53,7 +53,7 @@ The annotation can be placed anywhere in the Linear Gauge by setting the pixel v
 
 {% endaspTab %}
 
-![Adding position to annotation](../images/annotation-position.png)
+![Adding position to annotation](images/annotation-position.png)
 
 <!-- markdownlint-disable MD036 -->
 
@@ -65,7 +65,7 @@ The annotation can be aligned horizontally and vertically by using the [`Horizon
 
 {% endaspTab %}
 
-![Alignment of annotation](../images/annotation-alignment.png)
+![Alignment of annotation](images/annotation-alignment.png)
 
 ## Multiple annotations
 
@@ -75,4 +75,4 @@ Multiple annotations can be added to the Linear Gauge component by adding the mu
 
 {% endaspTab %}
 
-![Adding multiple annotations](../images/multiple-annotation.png)
+![Adding multiple annotations](images/multiple-annotation.png)

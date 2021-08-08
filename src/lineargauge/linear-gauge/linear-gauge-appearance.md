@@ -20,7 +20,7 @@ The following property and classes are available in the [`LinearGauge`](https://
 
 {% endaspTab %}
 
-![Linear Gauge with background color and border](../images/gauge-background.png)
+![Linear Gauge with background color and border](images/gauge-background.png)
 
 ## Setting up the Linear Gauge title
 
@@ -37,7 +37,7 @@ The title for the Linear Gauge can be set using [`Title`](https://help.syncfusio
 
 {% endaspTab %}
 
-![Linear Gauge with title](../images/gauge-titles.png)
+![Linear Gauge with title](images/gauge-titles.png)
 
 ## Customizing the Linear Gauge container
 
@@ -63,7 +63,7 @@ The "**Normal**" type will render the container as a rectangle and this is the d
 
 {% endaspTab %}
 
-![Linear Gauge with normal type container](../images/container-normal.png)
+![Linear Gauge with normal type container](images/container-normal.png)
 
 ### Rounded Rectangle
 
@@ -73,7 +73,7 @@ The "**RoundedRectangle**" type will render the container as a rectangle with ro
 
 {% endaspTab %}
 
-![Linear Gauge with rounded rectangle type container](../images/rounded-rectangle.png)
+![Linear Gauge with rounded rectangle type container](images/rounded-rectangle.png)
 
 ### Thermometer
 
@@ -83,7 +83,7 @@ The "**Thermometer**" type will render the container similar to the appearance o
 
 {% endaspTab %}
 
-![Linear Gauge with thermometer type container](../images/thermometer.png)
+![Linear Gauge with thermometer type container](images/thermometer.png)
 
 ## Fitting the Linear Gauge to the control
 
@@ -93,6 +93,6 @@ The Linear Gauge component is rendered with margin by default. To remove the mar
 
 {% endaspTab %}
 
-![Linear Gauge with gauge margin](../images/allow-margins.png)
+![Linear Gauge with gauge margin](images/allow-margins.png)
 
 >Note: To use this feature, set the [`AllowMargin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGauge.html#Syncfusion_EJ2_LinearGauge_LinearGauge_AllowMargin) property to "**false**", the [`Width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGauge.html#Syncfusion_EJ2_LinearGauge_LinearGauge_Width) property to "**100%**" and the properties of [`e-lineargauge-margin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeMargin.html) to "**0**".

@@ -14,7 +14,7 @@ Pointers are used to indicate values on an axis. The value of the pointer can be
 
 {% endaspTab %}
 
-![Linear Gauge with pointer value](../images/pointer.png)
+![Linear Gauge with pointer value](images/pointer.png)
 
 ## Types of pointer
 
@@ -46,7 +46,7 @@ An image can be rendered instead of rendering a shape as a pointer. It can be ac
 
 {% endaspTab %}
 
-![Linear Gauge with pointer as circle](../images/marker-pointer.png)
+![Linear Gauge with pointer as circle](images/marker-pointer.png)
 
 <!-- markdownlint-disable MD036 -->
 
@@ -68,7 +68,7 @@ The marker pointer can be customized using the following properties and class.
 
 {% endaspTab %}
 
-![Linear Gauge with pointer customization](../images/pointer-custom.png)
+![Linear Gauge with pointer customization](images/pointer-custom.png)
 
 ### Bar pointer
 
@@ -78,7 +78,7 @@ The bar pointer is used to track the axis value. The bar pointer starts from the
 
 {% endaspTab %}
 
-![Linear Gauge with pointer customization](../images/bar-pointer.png)
+![Linear Gauge with pointer customization](images/bar-pointer.png)
 
 <!-- markdownlint-disable MD036 -->
 
@@ -100,7 +100,7 @@ The bar pointer can be customized using following properties and class.
 
 {% endaspTab %}
 
-![Linear Gauge with bar pointer customization](../images/bar-custom.png)
+![Linear Gauge with bar pointer customization](images/bar-custom.png)
 
 ## Multiple pointers
 
@@ -110,7 +110,7 @@ Multiple pointers can be added to the Linear Gauge by adding multiple [`LinearGa
 
 {% endaspTab %}
 
-![Linear Gauge with multiple pointers](../images/multiple-pointer.png)
+![Linear Gauge with multiple pointers](images/multiple-pointer.png)
 
 ## Pointer animation
 
@@ -120,7 +120,7 @@ Pointer is animated on loading the gauge. This can be handled using the [`Animat
 
 {% endaspTab %}
 
-![Linear Gauge with pointer animation](../images/pointr-animation.gif)
+![Linear Gauge with pointer animation](images/pointr-animation.gif)
 
 ## Gradient Color
 
@@ -137,7 +137,7 @@ Using linear gradient, colors will be applied in a linear progression. The start
 
 {% endaspTab %}
 
-![Linear Gauge with linear gradient pointer](../images/linear-pointer.png)
+![Linear Gauge with linear gradient pointer](images/linear-pointer.png)
 
 ### Radial Gradient
 
@@ -147,6 +147,6 @@ Using radial gradient, colors will be applied in circular progression. The inner
 
 {% endaspTab %}
 
-![Linear Gauge with radial gradient pointer](../images/radial-pointer.png)
+![Linear Gauge with radial gradient pointer](images/radial-pointer.png)
 
 > Note: If we set both gradients, only the linear gradient gets rendered. If we set the [`StartValue`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLinearGradient.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLinearGradient_StartValue) and [`EndValue`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLinearGradient.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLinearGradient_EndValue) of the [`LinearGradient`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLinearGradient.html) as empty strings, then the radial gradient gets rendered in the pointer of the Linear Gauge.

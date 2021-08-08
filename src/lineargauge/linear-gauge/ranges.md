@@ -14,7 +14,7 @@ Range is the set of values in the axis. The range can be defined using the [`Sta
 
 {% endaspTab %}
 
-![Linear Gauge with ranges](../images/range.png)
+![Linear Gauge with ranges](images/range.png)
 
 ## Customizing the range
 
@@ -31,7 +31,7 @@ Ranges can be customized using the following properties in [`LinearGaugeRange`](
 
 {% endaspTab %}
 
-![Linear Gauge with range customization](../images/range-custom.png)
+![Linear Gauge with range customization](images/range-custom.png)
 
 ## Setting the range color for the labels
 
@@ -41,7 +41,7 @@ To set the color of the labels like the range color, set the [`UseRangeColor`](h
 
 {% endaspTab %}
 
-![Linear Gauge with range color as label color](../images/range-labelcolor.png)
+![Linear Gauge with range color as label color](images/range-labelcolor.png)
 
 ## Multiple ranges
 
@@ -51,7 +51,7 @@ Multiple ranges can be added to the Linear Gauge by adding multiple [`LinearGaug
 
 {% endaspTab %}
 
-![Linear Gauge with multiple ranges](../images/multiple-ranges.png)
+![Linear Gauge with multiple ranges](images/multiple-ranges.png)
 
 ## Gradient Color
 
@@ -68,7 +68,7 @@ Using linear-gradient, colors will be applied in a linear progression. The start
 
 {% endaspTab %}
 
-![Linear Gauge with linear gradient range](../images/linear-range.png)
+![Linear Gauge with linear gradient range](images/linear-range.png)
 
 ## Radial Gradient
 
@@ -78,6 +78,6 @@ Using radial gradient, colors will be applied in circular progression. The inner
 
 {% endaspTab %}
 
-![Linear Gauge with radial gradient range](../images/radial-range.png)
+![Linear Gauge with radial gradient range](images/radial-range.png)
 
 > Note: If we set both gradients for the range, only the linear gradient gets rendered. If we set the [`StartValue`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLinearGradient.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLinearGradient_StartValue) and [`EndValue`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLinearGradient.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLinearGradient_EndValue) of the [`LinearGradient`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLinearGradient.html) as empty strings, then the radial gradient gets rendered in the range of the Linear Gauge.

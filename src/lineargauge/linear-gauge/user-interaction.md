@@ -17,7 +17,7 @@ Linear Gauge displays the details about a pointer value through [`LinearGaugeToo
 {% aspTab template="lineargauge/user-interactions/tooltip", sourceFiles="" %}
 
 {% endaspTab %}
-![Linear Gauge with tooltip for pointer value](../images/tooltip.png)
+![Linear Gauge with tooltip for pointer value](images/tooltip.png)
 
 <!-- markdownlint-disable MD013 -->
 
@@ -31,7 +31,7 @@ Tooltip in the Linear Gauge control can be formatted using the [`Format`](https:
 
 {% endaspTab %}
 
-![Linear Gauge with tooltip format for pointer value](../images/tooltip-formats.png)
+![Linear Gauge with tooltip format for pointer value](images/tooltip-formats.png)
 
 ### Tooltip Template
 
@@ -41,7 +41,7 @@ The HTML element can be rendered in the tooltip of the Linear Gauge using the [`
 
 {% endaspTab %}
 
-![Linear Gauge with tooltip template for pointer value](../images/tooltip-template1.png)
+![Linear Gauge with tooltip template for pointer value](images/tooltip-template1.png)
 
 ### Customize the appearance of the tooltip
 
@@ -57,7 +57,7 @@ The tooltip can be customized using the following properties in [`LinearGaugeToo
 
 {% endaspTab %}
 
-![Linear Gauge with tooltip customization](../images/tooltip-custom.png)
+![Linear Gauge with tooltip customization](images/tooltip-custom.png)
 
 ## Positioning the tooltip
 
@@ -67,7 +67,7 @@ The tooltip is positioned at the "**End**" of the pointer. To change the positio
 
 {% endaspTab %}
 
-![Linear Gauge with tooltip position](../images/tooltip-position.png)
+![Linear Gauge with tooltip position](images/tooltip-position.png)
 
 ## Pointer Drag
 
@@ -77,4 +77,4 @@ To drag either marker or bar pointer to the desired axis value, set the [`Enable
 
 {% endaspTab %}
 
-![Linear Gauge with pointer drag](../images/dragging-pointr.gif)
+![Linear Gauge with pointer drag](images/dragging-pointr.gif)

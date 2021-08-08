@@ -16,7 +16,7 @@ The rendered Linear Gauge can be printed directly from the browser by calling th
 
 {% endaspTab %}
 
-![Linear Gauge with print functionality](../images/print.png)
+![Linear Gauge with print functionality](images/print.png)
 
 ## Export
 
@@ -32,7 +32,7 @@ To use the image export functionality, set the [`AllowImageExport`](https://help
 
 {% endaspTab %}
 
-![Linear Gauge with image export](../images/export.png)
+![Linear Gauge with image export](images/export.png)
 
 ### PDF Export
 
@@ -42,7 +42,7 @@ To use the PDF export functionality, set the [`AllowPdfExport`](https://help.syn
 
 {% endaspTab %}
 
-![Linear Gauge with image export](../images/export.png)
+![Linear Gauge with image export](images/export.png)
 
 ### Exporting Linear Gauge as base64 string of the file
 
@@ -52,6 +52,6 @@ The Linear Gauge can be exported as base64 string for the JPEG, PNG and PDF form
 
 {% endaspTab %}
 
-![Linear Gauge with base64 string](../images/export.png)
+![Linear Gauge with base64 string](images/export.png)
 
 >Note: The exporting of the Linear Gauge as base64 string is not applicable for the SVG format.

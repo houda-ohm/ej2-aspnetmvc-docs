@@ -113,6 +113,16 @@ In the below demo, we have update the `TotalCost` column value based on the `Uni
 
 {% endaspTab %}
 
+#### Cancel edit based on condition
+
+You can prevent the CRUD operations of the Grid by using condition in the `actionBegin` event with requestType as `beginEdit` for editing, `add` for adding and `delete` for deleting actions.
+
+In the below demo, we prevent the CRUD operation based on the `Role` column value. If the Role Column is ‘employee’, we are unable to edit/delete that row.
+
+{% aspTab template="grid/edit/cancel-edit-inline", sourceFiles="canceleditinline.cs" %}
+
+{% endaspTab %}
+
 ### Dialog
 
 In dialog edit mode, when you start editing the currently selected row data will be shown on a dialog.

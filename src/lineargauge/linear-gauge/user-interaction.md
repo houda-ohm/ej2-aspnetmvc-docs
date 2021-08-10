@@ -17,6 +17,7 @@ Linear Gauge displays the details about a pointer value through [`LinearGaugeToo
 {% aspTab template="lineargauge/user-interactions/tooltip", sourceFiles="" %}
 
 {% endaspTab %}
+
 ![Linear Gauge with tooltip for pointer value](images/tooltip.png)
 
 <!-- markdownlint-disable MD013 -->

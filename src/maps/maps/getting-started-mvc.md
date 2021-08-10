@@ -88,6 +88,6 @@ We are going to render `Maps` component in **Index.cshtml** page.
 
 <h2> Essential JS 2 for ASP.NET MVC Maps </h2>
 
- @Html.EJS().Maps("container").Layers(layer => { .ShapeData(ViewBag.shapeData).Add(); }).Render();
+ @Html.EJS().Maps("container").Layers(layer => { layer.ShapeData(ViewBag.shapeData).Add(); }).Render();
 
 ```

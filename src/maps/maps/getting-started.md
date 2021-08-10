@@ -6,35 +6,39 @@ You can explore some useful features in the Maps component using the following v
 
 ## Prerequisites
 
-To get start with ASP.NET MVC application, need to ensure the following software to be installed on the machine.
+To get started with the ASP.NET MVC application, make sure you have the following software installed on your computer.
 
 1. .Net Framework 4.5 and above.
 2. ASP.NET MVC 4 or ASP.NET MVC 5
-3. Visual Studio
+3. Visual Studio 2017
 
 ## Preparing ASP.NET MVC application
 
-The following steps to create ASP.NET MVC Application.
+The steps to create an ASP.NET MVC Application are as follows.
 
-**Step 1:** Create ASP.NET MVC Application with default template project in Visual Studio.
+**Step 1:** Click Create new project in Visual Studio 2017, and the popup window below will appear. Click the OK button after selecting the **ASP.NET Web Application(.NET Framework)** template. You can also change the name of the project.
 
-![Default Template](./images/default-template.png)
+![All Text](../images/mvc-template.PNG)
 
-**Step 2:** Once your project created. We need to add Syncfusion EJ2 package into your application by using `NuGet Package Manager`.
+**Step 2:** Following the above steps, the popup window below will appear. Select **MVC** in this window. Now the project will be created successfully.
 
-Open the `NuGet` package manager.
+![All Text](../images/MVC.PNG)
 
-![Solution Explorer](./images/solution-Explorer.png)
+**Step 3:** After you have created your project, use NuGet Package Manager to install the **Syncfusion.EJ2.MVC5** package.
 
-Install the **Syncfusion.EJ2.MVC4** package to the application.
+Open the **Manage NuGet packages**.
 
-![Nuget Demo](./images/nuget-demo.png)
+![Solution Explorer](../images/solution-Explorer.png)
 
-After installation complete, this will be included in the project. You can refer it from the Project Assembly Reference.
+The **Syncfusion.EJ2.MVC5** package should be installed in the application.
 
-**Note:** We need to install **NewtonSoft.JSON** as a dependency, since **Syncfusion.EJ2** dependent to `NewtonSoft.JSON` package.
+![Nuget Demo](../images/mvc-nuget.PNG)
 
-**Step 3:** Add Syncfusion.EJ2 namespace reference in `Web.Config`.
+This package will be included in the project once the installation is complete. You can refer to it from the Project Assembly Reference.
+
+> We need to install **NewtonSoft.JSON** as dependency since it **Syncfusion.EJ2.MVC5** dependent on NewtonSoft.JSON package.
+
+**Step 4:** In Web.Config file, include the Syncfusion.EJ2 namespace.
 
 ```javascript
 
@@ -56,7 +60,7 @@ After installation complete, this will be included in the project. You can refer
 
 ```
 
-**Step 4:** Add client side resources through [`CDN`](http://ej2.syncfusion.com/documentation/base/deployment.html?lang=typescript#cdn) or local [`package`](https://www.npmjs.com/package/@syncfusion/ej2) in the layout page **_Layout.cshtml.**
+**Step 4:** Add client-side resources through [CDN](http://ej2.syncfusion.com/documentation/base/deployment.html?lang=typescript#cdn) or local [package](https://www.npmjs.com/package/@syncfusion/ej2) in the layout page **_Layout.cshtml.** which is located in the Views/Shared folder.
 
 ```cs
 @* Syncfusion Essential JS 2 Scripts *@
@@ -64,7 +68,7 @@ After installation complete, this will be included in the project. You can refer
 
 ```
 
-**Step 5:** Add Script Manager and namespace in layout page **_Layout.cshtml.**
+**Step 5:** Script Manager and namespace should be added to the **_Layout.cshtml** layout page, which is located in the Views/Shared folder.
 
 ```cs
 
@@ -80,14 +84,12 @@ After installation complete, this will be included in the project. You can refer
 
 ```
 
-**Step 6:** Now, we can add Syncfusion Essential JS 2 for ASP.Net Core components in any page you want.
-
-We are going to render `Maps` component in **Index.cshtml** page.
+**Step 6:** To initialize the Maps, add the following code to your **Index.cshtml** view page, which is located in the Views/Home folder.
 
 ```cs
 
 <h2> Essential JS 2 for ASP.NET MVC Maps </h2>
 
- @Html.EJS().Maps("container").Layers(layer => { .ShapeData(ViewBag.shapeData).Add(); }).Render();
+ @Html.EJS().Maps("container").Layers(layer => { layer.ShapeData(ViewBag.shapeData).Add(); }).Render();
 
 ```

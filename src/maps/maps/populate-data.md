@@ -1,60 +1,116 @@
-# Populate Data
+# Populate data
 
-This section explains how to populate shape data for providing data input to maps control and usage of the DataSource property.
+This section explains how to populate data inputs and provide it to the Maps component.
 
 ## Shape data
 
-The shape data collection describes geographical shape information that can be obtained from
-[GEOJSON format shapes](http://files2.syncfusion.com/dtsupport/uploads/user/uploads/Maps_GeoJSON.zip).
-
-.\ Maps_GeoJSON\All Countries with States
-
-## Data binding
-
-The maps control supports data binding with the `dataSource` property in shape layers.
-
-### Properties
-
-The following properties in shape layers are used to bind data in maps control:
-
-    * dataSource
-    * shapeDataPath
-    * shapePropertyPath
+The shape data collection describes geographical shape information that is available in GeoJSON format. The Map shapes are rendered with this data. The custom shapes such as seat selection in bus, seat selection in a cricket stadium and more useful information can be also added as ShapeData in the layer of the Maps.
 
 ## Data source
 
-The dataSource property accepts the collection values as input. For example, you can provide a list of objects as input.
+The `DataSource` property is used to represent statistical data in the Maps component, and it accepts a collection of values as input. For example, a list of objects as input can be provided to the data source. This data source will be used to color the map, display data labels, and display tooltip, among other things.
 
-## Shape data path
+The data source is populated with JSON data relative to shape data and stored as JSON object. In the below example, the below JSON object can be used as data source in Maps.
 
-The `shapeDataPath` property is used to reference the data ID in DataSource. For example, population MapData contains data ids ‘Name’ and ‘Population’. The `shapeDataPath` and the `shapePropertyPath` properties are related to each other (refer to the `shapePropertyPath` for more details).
+```json
+[
+    {
+        'code': 'AF',
+        'value': 53,
+        'name': 'Afghanistan',
+        'population': 29863010,
+        'density': 119
+    },
+    {
+        'code': 'AL',
+        'value': 117,
+        'name': 'Albania',
+        'population': 3195000,
+        'density': 111
+    },
+    {
+        'code': 'DZ',
+        'value': 15,
+        'name': 'Algeria',
+        'population': 34895000,
+        'density': 15
+    },
+    {
+        'code': 'AO',
+        'value': 15,
+        'name': 'Angola',
+        'population': 18498000,
+        'density': 15
+    },
+    {
+        'code': 'AR',
+        'value': 15,
+        'name': 'Argentina',
+        'population': 40091359,
+        'density': 14
+    },
+    {
+        'code': 'AM',
+        'value': 109,
+        'name': 'Armenia',
+        'population': 3230100,
+        'density': 108
+    }
+]
 
-## Shape property path
+```
 
-The `shapePropertyPath` property is similar to the `shapeDataPath` that refers to the column name in the `data` property of shape layers to identify the shape. When the values of the `shapeDataPath` property in the `dataSource` property and the value of `shapePropertyPath` in the data property match, then the associated object from the `dataSource` is bound to the corresponding shape.
+## Data binding
 
-The datasource is populated with JSON data that relative to the shape data and stored in JSON object. The USA population as datasource is used for better understanding.
+The following properties in the `Layers` are used for binding data in the Maps component. Both the properties are related to each other.
 
-The populationdensity.js” file is used to store JSON data.
+* ShapePropertyPath
+* ShapeDataPath
 
-Refer to both shape data and datasource as illustrated in the following code example.
+### ShapePropertyPath
+
+The `ShapePropertyPath` property is used to refer the field name in the `ShapeData` property of shape layers to identify the shape. When the values of `ShapeDataPath` property from the `DataSource` property and `ShapePropertyPath` property from the `ShapeData` property match, then the associated object from the data source is bound to the corresponding shape.
+
+> `world-map.json` file contains following data and its field **"name"** value is used to map the corresponding shape with the provided data source.
+
+```json
+{
+    "type": "Feature",
+    "properties": {
+        "admin": "Afghanistan",
+        "name": "Afghanistan",
+        "continent": "Asia"
+    },
+    "geometry": { "type": "Polygon", "coordinates": [[[61.21081709172573, ... },
+...
+}
+
+```
+
+### ShapeDataPath
+
+The `ShapeDataPath` property is similar to the `ShapePropertyPath` property, but it refers to the field name in the `DataSource` property. For example, [populationData](#data-source) contains the **code**, **value**, **name**, **population** and **density** fields. Here, the **name** field is set to the shapeDataPath to map the corresponding value of field name in shape data.
+
+In the below example, both "**name**" fields contain the same value as "**Afghanistan**", this value is matched in both shape data and data source, so that the details associated with "**Afghanistan**" will be mapped to the corresponding shape and used to color the corresponding shape, display data labels, display tooltips, and more.
 
 {% aspTab template="maps/populate-data", sourceFiles="populate-data.cs" %}
 
 {% endaspTab %}
 
+![Populate data](./images/PopulateData/data.PNG)
+
 ## Binding complex data source
 
-You can bind the data field from data source to the maps in two different ways.
+Data from data source can be bind to the Maps in two different ways.
 
-1. Bind the field name directly to the properties as [`ShapeDataPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeDataPath), [`ColorValuePath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsBubble.html#Syncfusion_EJ2_Maps_MapsBubble_ColorValuePath),
-[`ValuePath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsBubble.html#Syncfusion_EJ2_Maps_MapsBubble_ValuePath) and [`ShapeValuePath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsMarker.html#Syncfusion_EJ2_Maps_MapsMarker_ShapeValuePath).
+1. Bind the field name directly to the properties as `ShapeDataPath`, `ColorValuePath`, `ValuePath` and `ShapeValuePath`.
 
-2. Bind the field name as `data.field` to the properties as [`ShapeDataPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeDataPath), [`ColorValuePath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsBubble.html#Syncfusion_EJ2_Maps_MapsBubble_ColorValuePath),
-[`ValuePath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsBubble.html#Syncfusion_EJ2_Maps_MapsBubble_ValuePath) and [`ShapeValuePath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsMarker.html#Syncfusion_EJ2_Maps_MapsMarker_ShapeValuePath).
+2. Bind the field name as `data.field` to the properties as `ShapeDataPath`, `ColorValuePath`, `ValuePath` and `ShapeValuePath`.
 
-The complex data source binding can be done as illustrated in the following code example.
+Refer complex support for data source as illustrated in the following example. Also, refer the data values for [ViewBag.bubbleData](https://www.syncfusion.com/downloads/support/directtrac/general/ze/BubbleData-103021339), [ViewBag.complexData](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ComplexData1459638658) and [ViewBag.markerData](https://www.syncfusion.com/downloads/support/directtrac/general/ze/MarkerData357696841) here.
 
 {% aspTab template="maps/complex-data", sourceFiles="complex-data.cs" %}
 
 {% endaspTab %}
+
+![Binding complex data source](./images/PopulateData/complex-data.PNG)

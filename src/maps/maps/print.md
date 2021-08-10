@@ -1,8 +1,8 @@
-# Print and Export
+# Print and Export in ASP.NET MVC Maps component
 
 ## Print
 
-To use the print functionality, we should set the [`AllowPrint`](https://ej2.syncfusion.com/documentation/api/maps/#allowprint) property to **true**. The rendered maps can be printed directly from the browser by calling the method [`print`](https://ej2.syncfusion.com/documentation/api/maps/#print).
+The rendered maps can be printed directly from the browser by calling the [`print`](https://ej2.syncfusion.com/documentation/api/maps/#print) method. To use the print functionality, set the [`AllowPrint`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_AllowPrint) property to "**true**".
 
 {% aspTab template="maps/print-export/print", sourceFiles="print.cs" %}
 

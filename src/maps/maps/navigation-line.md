@@ -1,40 +1,37 @@
 # Navigation lines
 
-Navigation lines are used to denote the path between the two locations. You can use this feature to draw the navigation lines for flight, train or sea routes.
+The navigation lines are used to denote the path between two locations. This feature can be used to draw flight or sea routes. Navigation lines are enabled by setting the `Visible` property of the `MapsNavigationLine` class to "**true**".
 
 ## Customization
 
-You can customize the following properties in the navigation lines by modifying their default values in `navigationlineSettings`
+The following properties are available in `MapsNavigationLine` property to customize the navigation line of the Maps component.
 
-* Color - Specifies the color of navigation line.
-* Dash array - Specifies the type of dash array line.
-* Width - Specifies the line width.
-* Angle - Specifies the navigation line angle.
-* Highlight settings - Customizes the opacity, border, and fill color when the cursor hovers over it.
-* Selection settings - Customizes the opacity, border, and fill color when the line is selected.
+* `Color` - To apply the color for navigation lines in Maps.
+* `DashArray` - To define the pattern of dashes and gaps that is applied to the outline of the navigation lines.
+* `Width` - To customize the width of the navigation lines.
+* `Angle` - To customize the angle of the navigation lines.
+* `HighlightSettings` - To customize the highlight settings of the navigation line.
+* `SelectionSettings` - To customize the selection settings of the navigation line.
 
-The following example shows rendering the path between two locations using latitudes and longitudes.
-
-You can customize the navigation line color, dashArray, width and angle by modifying their default values in
-`navigationLineSettings`.
-
-Refer to the following code sample to navigate the line between two cities in World map. Provide two locations latitude and longitude values to `navigationLineSettings`.
+To navigate the line between two cities on the world map, use the below code snippet. The `Latitude` and `Longitude` values are used to indicate the start and end points of navigation lines drawn on Maps.
 
 {% aspTab template="maps/navigation-line", sourceFiles="navigation-line.cs" %}
 
 {% endaspTab %}
 
+![Maps with navigation line](./images/Navigationline/navigation-line.PNG)
+
 ## Enabling the arrows
 
-You can enable the arrows in the navigation line using [`arrowSettings.showArrow`](../api/maps/arrow) API, also you can customize following properties in arrow
+To enable the arrow in the navigation line, set the `ShowArrow` property of `MapsArrow` class to "**true**". The following properties are available in `MapsArrow` class to customize the arrow of the navigation lines.
 
-* color - Specifies the color of the arrow
-* offset - Specifies the arrow's offset position
-* position - Specifies the arrow position to `start` or `end` line
-* size - Specifies the arrow size in pixel
+* `Color` - To apply the color for arrow of the navigation line.
+* `OffSet` - To customize the offset position of the arrow of the navigation line.
+* `Position` - To customize the position of the arrow in navigation line. The possible values can be "**Start**" and "**End**".
+* `Size` - To customize the size of the arrow in pixels.
 
 {% aspTab template="maps/navigation-line/arrowSettings", sourceFiles="arrow.cs" %}
 
 {% endaspTab %}
 
-Refer to the [`API`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsNavigationLine.html) for Navigation Lines feature.
+![Enabling the arrow](./images/Navigationline/arrow.PNG)

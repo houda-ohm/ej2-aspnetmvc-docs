@@ -1,13 +1,12 @@
-
 # Overview
 
-The maps control is used to visualize the geographical data. This represents the statistical data of a particular geographical area on earth, with user interactivity and provides various customizing options. All map elements are rendered using the Scalable Vector Graphics (SVG).
+The Maps control is used to visualize the geographical data. It is used to represent the statistical data of a particular geographical area on Earth, with user interactivity and provides various customizing options. All the Maps elements are rendered using Scalable Vector Graphics (SVG).
 
 ## Key Features
 
 * Supports any number of layers and sublayers.
-* Supports GeoJSON data, which allows you to plot your own shapes in the maps.
-* Supports map providers such as Bing and OpenStreetMap that can be added to any layers.
-* Supports 6 types of map projections.
-* Supports legend, data label, marker, bubble, navigation lines and annotations for adding additional information to the map.
-* Supports interactive features such as zooming, panning, tooltip, highlight, selection and interactive legend.
+* Supports GeoJSON data, which allows plotting the custom shapes in the Maps.
+* Supports Maps providers such as Bing and OpenStreetMap that can be added as main layers.
+* Supports 6 types of Maps projections.
+* Supports legend, data label, marker, bubble, navigation lines and annotations for visualizing additional information on the Maps.
+* Supports interactive features like zooming, panning, tooltip, highlight, selection and interactive legend.

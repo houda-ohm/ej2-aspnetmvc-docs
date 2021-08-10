@@ -1,6 +1,6 @@
 # Localization
 
-Localization library allows you to localize the default text content of maps. Maps has the static text for some features such as zooming toolbars and the text can be changed to any culture (Arabic, Deutsch, French, etc.) by defining the locale value and translation object.
+The localization library allows localizing the default text content of the Maps component. The Maps component has the static text of some features such as tooltip of zoom toolbar, and that can be changed to any other culture(Arabic, Deutsch, French, etc) by defining the locale value and translation object.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -15,11 +15,11 @@ Localization library allows you to localize the default text content of maps. Ma
 </tr>
 <tr>
 <td>ZoomIn</td>
-<td>ZoomIn</td>
+<td>Zoom In</td>
 </tr>
 <tr>
 <td>ZoomOut</td>
-<td>ZoomOut</td>
+<td>Zoom Out</td>
 </tr>
 <tr>
 <td>Reset</td>
@@ -28,17 +28,10 @@ Localization library allows you to localize the default text content of maps. Ma
 <tr>
 <td>Pan</td>
 <td>Pan</td>
-</tr>
-<tr>
-<td>ResetZoom</td>
-<td>Reset Zoom</td>
 </tr>
 </table>
 
-To load translation object in an application, use the load function of L10n class.
-
-For more information about localization, refer to
-[`localization`](http://ej2.syncfusion.com/documentation/base/localization.html)
+To load translation object in the application, use `load` function of **L10n** class. For more information about localization, refer [here](http://ej2.syncfusion.com/documentation/base/localization.html).
 
 {% aspTab template="maps/localization", sourceFiles="localization.cs" %}
 

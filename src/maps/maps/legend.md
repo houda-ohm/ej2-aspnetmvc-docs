@@ -1,185 +1,222 @@
 # Legend
 
-A legend is a key used on a map that contains swatches of symbols with descriptions. This provides valuable information for interpreting what the map displays; it can be represented in various colors, shapes or other identifiers based on the data. Legends give a breakdown of what each symbol represents throughout the map.
+A Legend is a visual representation of the symbols used on the map. It can be represented in various colors, shapes or other identifiers based on the data and provides valuable information for interpreting what the Maps are displaying. It explains what each symbol in the Maps represents. Legends are enabled by setting the `Visible` property of `MapsLegendSettings` class to "**true**".
 
-## Visibility
+## Modes of legend
 
-The legends can be made visible by setting the visible property of legendSettings to true.
-
-## Positioning of the legend
-
-The legend can be positioned in the following ways:
-
-* Absolute position.
-
-* Dock position.
-
-### Absolute position
-
-Based on the margin values of x and y-axes, the legends can be positioned using the `location.x` and `location.y` properties available in legendSettings. For positioning the legend based on margins corresponding to a map, set the value of position to ‘Float’.
-
-### Dock position
-
-The legends can be positioned in following locations within the container.
-You can set the following options by using the `position` property in legendSettings.
-
-* Top
-
-* Left
-
-* Bottom
-
-* Right
-
-The above four positions can be aligned with the combination of 'Near', 'Center' and 'Far' using the `alignment` property in `legendSettings`. So, the legends can be aligned to 12 positions.
-
-## Legend Mode
-
-Legend had two type of mode. `Default` mode and `Interactive` mode.
+Legend had two types of mode.
+1. **Default** mode
+2. **Interactive** mode
 
 ### Default mode
 
-The default mode legends have symbols with legend labels that are used to identify the shape, bubble or marker color.
+Default mode legends having symbols with legend labels, used to identify the shape or bubble or marker color. To enable this option by setting the `Mode` property of `MapsLegendSettings` as "**Default**".
 
 ### Interactive mode
 
-The legends can be made interactive with an arrow mark that indicates the exact range color in the legend when the mouse hovers over the corresponding shapes. You can enable this option by setting the value of the `mode` property in legendSettings value to “Interactive” and the default value of the `mode` property to“Default” to enable the normal legend.
+The legends can be made interactive with an arrow mark indicating the exact range color in the legend when the mouse hovers over the corresponding shapes. To enable this type of mode by setting the `Mode` property of `MapsLegendSettings` as "**Interactive**". The `InvertedPointer` property is used to enable or disable the visibility of the inverted pointer in interactive legend in Maps.
 
-## Legend size
+{% aspTab template="maps/legendproperties/legend-mode", sourceFiles="legend-mode.cs" %}
 
-The map legend size can be modified by using the `height` and `width` properties in `legendSettings`.
+{% endaspTab %}
+
+![Legend mode](./images/Legend/legend-mode.PNG)
+
+## Positioning of the legend
+
+The legend can be positioned in the following two ways:
+
+* Absolute position
+* Dock position
+
+<b>Absolute position</b>
+
+The legend of the Maps can be positioned using the `Location` property in the `MapsLegendSettings` class. For positioning the legend based on co-ordinates corresponding to a Maps, the `Position` property is set as "**Float**".
+
+<b>Dock position</b>
+
+Legends are positioned in the following locations within the container. The `Position` property in `MapsLegendSettings` class is used to set these options in Maps.
+
+* Top
+* Left
+* Bottom
+* Right
+
+The above four positions can be aligned with combination of "**Near**", "**Center**" and "**Far**" using `Alignment` property in `MapsLegendSettings` class. So, the legend can be aligned to 12 positions.
+
+{% aspTab template="maps/legendproperties/legend-position", sourceFiles="legend-position.cs" %}
+
+{% endaspTab %}
+
+![Legend position](./images/Legend/legend-position.PNG)
 
 ## Legend for shapes
 
-The layer shape type legends can be generated for each color mappings in shape settings.
+Legend for shapes can be generated from color mapping types such as equal color mapping, range color mapping and desaturation color mapping.
 
-**Note:** The following code sample demonstrates the equal colorMapping legends for the shapes.
-
-```sh
-[
-    { value: 5, State: "Alabama", Candidate: "Trump", Trump:62.9,Clinton:34.6 },
-    { value: 5, State: "Alaska", Candidate: "Trump", Trump:52.9,Clinton:37.7},
-    { value: 5, State: "Arkansas", Candidate: "Trump", Trump:60.6,Clinton:33.7 },
-    { value: 5, State: "Arizona", Candidate: "Trump", Trump:49.5,Clinton:45.4 },
-    { value: 1, State: "California", Candidate: "Clinton", Trump:32.8,Clinton:61.6},
-    { value: 1, State: "Colorado", Candidate: "Clinton", Trump:47.3,Clinton:44.4 },
-    { value: 1, State: "Connecticut", Candidate: "Clinton", Trump:41.2,Clinton:54.5},
-    { value: 1, State: "Delaware", Candidate: "Clinton", Trump:53.4,Clinton:41.9 },
-    { value: 1, State: "District of Columbia",  Candidate: "Clinton", Trump:4.1,Clinton:92.8},
-    { value: 5, State: "Florida", Candidate: "Trump", Trump:49.1,Clinton:47.8 },
-    { value: 5, State: "Georgia", Candidate: "Trump", Trump:51.3,Clinton:45.6 },
-    { value: 1, State: "Hawaii", Candidate: "Clinton", Trump:62.2,Clinton:30 },
-    { value: 5, State: "Idaho", Candidate: "Trump", Trump:59.2,Clinton:27.6  },
-    { value: 1, State: "Illinois", Candidate: "Clinton", Trump:55.4,Clinton:39.4  },
-    { value: 5, State: "Indiana", Candidate: "Trump", Trump:57.2,Clinton:37.9  },
-    { value: 5, State: "Iowa", Candidate: "Trump", Trump:51.8,Clinton:42.2  },
-    { value: 5, State: "Kansas", Candidate: "Trump", Trump:57.2,Clinton:36.2 },
-    { value: 5, State: "Kentucky", Candidate: "Trump", Trump:62.5,Clinton:32.7  },
-    { value: 5, State: "Louisiana", Candidate: "Trump", Trump:58.1,Clinton:38.4  },
-    { value: 1, State: "Maine", Candidate: "Clinton", Trump:45.2,Clinton:47.9 },
-    { value: 1, State: "Maryland", Candidate: "Clinton", Trump:35.3,Clinton:60.5  },
-    { value: 1, State: "Massachusetts", Candidate: "Clinton", Trump:33.5,Clinton:60.8 },
-    { value: 5, State: "Michigan", Candidate: "Trump", Trump:47.6,Clinton:47.3  },
-    { value: 1, State: "Minnesota", Candidate: "Clinton", Trump:45.4,Clinton:46.9 },
-    { value: 5, State: "Mississippi", Candidate: "Trump", Trump:58.3,Clinton:39.7  },
-    { value: 5, State: "Missouri", Candidate: "Trump", Trump:57.1,Clinton:38.0  },
-    { value: 5, State: "Montana", Candidate: "Trump", Trump:56.5,Clinton:36.0 },
-    { value: 5, State: "Nebraska", Candidate: "Trump", Trump:60.3,Clinton:34.0  },
-    { value: 1, State: "Nevada", Candidate: "Clinton", Trump:45.5,Clinton:47.9  },
-    { value: 1, State: "New Hampshire", Candidate: "Clinton", Trump:47.2,Clinton:47.6  },
-    { value: 1, State: "New Jersey", Candidate: "Clinton", Trump:41.8,Clinton:55.0},
-    { value: 1, State: "New Mexico", Candidate: "Clinton", Trump:40.0,Clinton:48.3  },
-    { value: 1, State: "New York", Candidate: "Clinton", Trump:37.5,Clinton:58.8 },
-    { value: 5, State: "North Carolina", Candidate: "Trump", Trump:50.5,Clinton:46.7 },
-    { value: 5, State: "North Dakota", Candidate: "Trump", Trump:64.1,Clinton:27.8 },
-    { value: 5, State: "Ohio", Candidate: "Trump", Trump:52.1,Clinton:43.5 },
-    { value: 5, State: "Oklahoma", Candidate: "Trump", Trump:65.3,Clinton:28.9 },
-    { value: 1, State: "Oregon", Candidate: "Clinton", Trump:41.1,Clinton:51.7  },
-    { value: 5, State: "Pennsylvania", Candidate: "Trump", Trump:48.8,Clinton:47.6 },
-    { value: 1, State: "Rhode Island", Candidate: "Clinton", Trump:39.8,Clinton:55.4 },
-    { value: 5, State: "South Carolina", Candidate: "Trump", Trump:54.9,Clinton:40.8 },
-    { value: 5, State: "South Dakota", Candidate: "Trump", Trump:61.5,Clinton:31.7 },
-    { value: 5, State: "Tennessee", Candidate: "Trump", Trump:61.1,Clinton:34.9 },
-    { value: 5, State: "Texas", Candidate: "Trump", Trump:52.6,Clinton:43.4  },
-    { value: 5, State: "Utah", Candidate: "Trump", Trump:45.9,Clinton:27.8  },
-    { value: 1, State: "Vermont", Candidate: "Clinton", Trump:39.7,Clinton:61.1  },
-    { value: 1, State: "Virginia", Candidate: "Clinton", Trump:45.0,Clinton:49.9 },
-    { value: 1, State: "Washington", Candidate: "Clinton", Trump:4.1,Clinton:92.8  },
-    { value: 5, State: "Wisconsin", Candidate: "Trump", Trump:68.7,Clinton:26.5 },
-    { value: 5, State: "West Virginia", Candidate: "Trump", Trump:47.9,Clinton:46.9  },
-    { value: 5, State: "Wyoming", Candidate: "Trump", Trump:70.1,Clinton:22.5  }
-    ]
-```
-
-Provide the `shapePropertyPath` value as 'name and `shapeDataPath` value as 'State'. To enable the equal colormapping refer the `shapeSettings.colorMapping` code sample. Finally set `legendSettings.visible` as true.
+The below code snippet demonstrate the equal color mapping legends for the shapes. To bind the given data source to the `DataSource` property of `MapsLayer` class. Set the value of `ShapePropertyPath` to **"name"** and `ShapeDataPath` to **"Country"**. To enable equal color mapping, set the multiple `MapsColorMapping` classes to the `MapsShapeSettings` class. Finally, set the `Visible` property of `MapsLegendSettings` as "**true**". The `Label` property in `MapsColorMapping` class is used to set the text name for legend in Maps.
 
 {% aspTab template="maps/legend", sourceFiles="legend.cs" %}
 
 {% endaspTab %}
 
-## Legend shape
+![Legend for shapes](./images/Legend/legend.PNG)
 
-To get the legend shape value for `legendSettings` use the `shape` property. You can customize the shape by using the `shapeWidth` and `shapeHeight` properties.
+### Legend shape
 
-## Legend for items excluded from color mapping
+Maps supports the following types of legend shapes. The `Shape` property in the `MapsLegendSettings` class can be used to change the type of legend shapes.
 
-Based on the ranges in data source, get the excluded ranges from color mapping, and then show the legend with excluded range values are bound to the specific legend.
+* Circle
+* Rectangle
+* Triangle
+* Diamond
+* Cross
+* Star
+* HorizontalLine
+* VerticalLine
+* Pentagon
+* InvertedTriangle
 
-The following code example shows legends for the items excluded from color mapping.
+The shape of legends can be customized by using the `ShapeWidth`, `ShapeHeight`, `ShapeBorder` and `ShapePadding` properties.
+
+### Customization
+
+The following properties are available in legend to customize the legend shape and legend text in Maps.
+
+* `Background` - To customize the background color of the Legend.
+* `Border` - To customize the color, width and opacity of the border for the Legend.
+* `Fill` - To apply the color for the Legend in Maps.
+* `LabelDisplayMode` - To customize the display mode for the Legend text in Maps.
+* `LabelPosition` - To customize the position of the Legend text in Maps.
+* `Orientation` - To customize the orientation of the Legend in Maps.
+* `TextStyle` - To customize the text style for Legend in Maps.
+* `Title` - To apply the title for the Legend in Maps.
+* `TitleStyle` - To customize the style of the title for the Legend in Maps.
+* `Height` - To customize the height of the Legend in Maps.
+* `Width` - To customize the width of the Legend in Maps.
+* `Opacity` - To apply the opacity to the Legend in Maps.
+
+{% aspTab template="maps/legendproperties/legend-customization", sourceFiles="legend-customization.cs" %}
+
+{% endaspTab %}
+
+![Legend customization](./images/Legend/legend-customization.PNG)
+
+### Legend for items excluded from color mapping
+
+The legend can be enabled for items excluded from the color mapping using the `Color` property in `MapsColorMapping` class. Refer to the "**population_density**" data which demonstrates the population density of some countries.
+
+```sh
+ [
+    ...
+    {
+        'code': 'AE',
+        'value': 90,
+        'name': 'United Arab Emirates',
+        'population': 8264070,
+        'density': 99
+    },
+    {
+        'code': 'GB',
+        'value': 257,
+        'name': 'United Kingdom',
+        'population': 62041708,
+        'density': 255
+    },
+    {
+        'code': 'US',
+        'value': 34,
+        'name': 'United States',
+        'population': 325020000,
+        'density': 33
+    }
+    ...
+    ];
+```
+
+The following example shows how to enable legend for items excluded from the color mapping. In the following example, color mapping is added for the ranges from "**0**" to "**200**". If there are any records in the data source that are outside of this range, the color mapping will not be applied. To apply the color for these excluded items, set the `Color` property alone in the `MapsColorMapping` property. To enable legend for these items, set the `Visible` property of `MapsLegendSettings` class to "**true**".
 
 {% aspTab template="maps/legendproperties/excludelegend", sourceFiles="excludelegend.cs" %}
 
 {% endaspTab %}
 
-## Hide desired legend items
+![Legend for excluded items from color mapping](./images/Legend/legend-excludeitem.PNG)
 
-To enable or disable the desired legend for each colormapping, set the `showLegend` property to `true` in `colorMapping`.
+### Hide desired legend items
+
+Use the `ShowLegend` property in the `MapsColorMapping` class to show or hide the desired legend items in Maps. If the `ShowLegend` property is set to "**false**", the legend item will be hidden. otherwise, it will be visible.
 
 {% aspTab template="maps/legendproperties/hidelegend", sourceFiles="hidelegend.cs" %}
 
 {% endaspTab %}
 
-## Hide legend items based data source value
+![Hide desired legend items](./images/Legend/hide-legenditem.PNG)
 
-To enable or disable the legend visibility for each item, bind the field name in the data source to the `showLegendPath` property in `legendSettings`.
+### Hide legend items based on data source value
 
-The following code example shows how to hide the legend items based data source value.
+Depending on the boolean values provided in the data source, the legend items will be hidden or visible. Bind the field name that contains the visibility state in the data source to the `ShowLegendPath` property of the `MapsLegendSettings` class to achieve this.
 
 {% aspTab template="maps/legendproperties/hidelegendbasedDS", sourceFiles="hidelegendbasedDS.cs" %}
 
 {% endaspTab %}
 
-## Bind legend item text from data source
+![Hide legend items based on data source value](./images/Legend/Legend-itemDS.PNG)
 
-To show the legend text based on binding, the field name in the datasource should be set to the `valuePath` property in `legendSettings`.
+### Binding legend item text from data source
+
+To show the legend text based on values provided in the data source, use the `ValuePath` property in the `MapsLegendSettings` class.
 
 {% aspTab template="maps/legendproperties/bindlegendtext", sourceFiles="bindlegendtext.cs" %}
 
 {% endaspTab %}
 
-## Hide duplicate legend items
+![Hide legend items based on data source value](./images/Legend/legend-textDS.PNG)
 
-To enable or disable the duplicate legend items, set the property `removeDuplicateLegend` property to `true` in `legendSettings`.
+### Hide duplicate legend items
+
+To hide the duplicate legend items in Maps, set the `RemoveDuplicateLegend` property to "**true**" in the `MapsLegendSettings` class.
 
 {% aspTab template="maps/legendproperties/duplicatelegend", sourceFiles="duplicatelegend.cs" %}
 
 {% endaspTab %}
 
-## Toggle option in legend
+![Hide duplicate legend items](./images/Legend/duplicate-legenditem.PNG)
 
-The toggle option has been provided for legend. So, if you toggle a legend, the given color will be changed to the corresponding maps shape item. You can enable the toggle options using the `toggleLegendSettings` property.
+### Toggle option in legend
 
-The following options are available to customize the shape of the map:
+The toggle option has been provided for legend. If the legend can be toggled, the given color will be changed to the corresponding map shape item. To enable the toggle options in Legend, set the `Enable` property of the `MapsToggleLegendSettings` class to "**true**".
 
-* `applyShapeSettings` – Applies the fill property value in shapeSettings to a shape of the maps if it is true and a legend item is clicked.
-* `fill`- Specifies the color to the shape of the maps.
-* `opacity` – Specifies the transparency of the legend.
-* `border` – Specifies the border color and width.
+The following properties are available to customize the toggle option in legend.
 
-The following code example demonstrates how to add the toggle option to legend.
+* `ApplyShapeSettings` – To apply the `Fill` property value to the shape of the Maps when toggling the legend items.
+* `Fill` - To apply the color to the shape of the Maps for which legend item is toggled.
+* `Opacity` – To customize the transparency for the shapes for which legend item is toggled.
+* `Border` – To customize the color, width and opacity of the border of the shapes in Maps.
+
+The following example demonstrates how to enable the toggle option to legend.
 
 {% aspTab template="maps/legendproperties/togglelegend", sourceFiles="togglelegend.cs" %}
 
 {% endaspTab %}
 
-Refer to the [`API`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLegendSettings.html) for legend feature.
+![Hide duplicate legend items](./images/Legend/toggle-legend.PNG)
+
+## Enable legend for bubbles
+
+To enable the legend for the bubble by setting the `Visible` property of `MapsLegendSettings` class as "**true**" and `Type` property of `MapsLegendSettings` class as "**Bubbles**". Refer to the below code snippet to enable the legend for bubbles with each bubble different colors rendering.
+
+{% aspTab template="maps/bubble/bubble-legend", sourceFiles="bubble-legend.cs" %}
+
+{% endaspTab %}
+
+![Enable legend for bubble](./images/Legend/legend-bubble.PNG)
+
+## Enable legend for markers
+
+To enable legend for marker by setting the `Visible` property of `MapsLegendSettings` class as "**true**" and `Type` property of `MapsLegendSettings` class as "**Markers**". The `LegendText` property in the `MapsMarker` class can be used to show the legend text based on values provided in the data source. Refer to the below example to enable the legend for the markers.
+
+{% aspTab template="maps/markers/legend", sourceFiles="legend.cs" %}
+
+{% endaspTab %}
+
+![Enable legend for marker](./images/Legend/legend-marker.PNG)

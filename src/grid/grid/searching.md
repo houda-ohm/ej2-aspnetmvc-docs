@@ -61,3 +61,11 @@ To clear the searched grid records from the external button, set [`Key`](https:/
 {% aspTab template="grid/search/clear-search", sourceFiles="clear-search.cs" %}
 
 {% endaspTab %}
+
+## Search on each key stroke
+
+You can search the Grid data on each key stroke by binding the `keyup` event for the search input element inside the [`created`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event. Inside the `keyup` handler you can search the Grid by invoking the [`search`](https://ej2.syncfusion.com/javascript/documentation/api/grid/#search) method of the Grid component.
+
+{% aspTab template="grid/search/search-each-key", sourceFiles="search-each-key.cs" %}
+
+{% endaspTab %}

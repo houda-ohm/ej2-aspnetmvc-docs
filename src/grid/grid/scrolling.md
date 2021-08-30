@@ -38,3 +38,13 @@ You can scroll the grid content to the selected row position by using the [`RowS
 {% aspTab template="grid/scrolling/scroll-selected-row", sourceFiles="scroll-selected-row.cs" %}
 
 {% endaspTab %}
+
+## Hide the scrollbar when the content is not overflown
+
+You can hide the scrollbar of Grid content by using the [`hideScroll`](https://ej2.syncfusion.com/javascript/documentation/api/grid/#hidescroll) method when the content doesn't overflow its parent element.
+
+In the following sample, we have invoked the [`hideScroll`](https://ej2.syncfusion.com/javascript/documentation/api/grid/#hidescroll) method inside the [`dataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event.
+
+{% aspTab template="grid/scrolling/hide-scroll", sourceFiles="hide-scroll.cs" %}
+
+{% endaspTab %}
